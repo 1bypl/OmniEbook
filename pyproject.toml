@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omniebook"
+version = "1.3.0"
+description = "Find, read and organise free ebooks, documents and audiobooks"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "1bypl", url = "https://github.com/1bypl" }]
+dependencies = ["beautifulsoup4>=4.12"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: X11 Applications :: GTK",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Sound/Audio :: Players",
+  "Topic :: Text Processing",
+]
+
+[project.optional-dependencies]
+readers = ["pymupdf>=1.23", "ebooklib>=0.18"]
+
+[project.scripts]
+omniebook = "omniebook.app:main"
+
+[tool.setuptools]
+packages = [
+  "omniebook", "omniebook.core", "omniebook.sources", "omniebook.i18n",
+  "omniebook.themes", "omniebook.libreoffice", "omniebook.readers",
+  "omniebook.ui", "omniebook.ui.views", "omniebook.ui.widgets",
+]
+
+[tool.setuptools.package-data]
+"omniebook" = ["i18n/*.json", "themes/*.css"]
