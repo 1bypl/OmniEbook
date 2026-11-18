@@ -13,7 +13,7 @@ Licencja: **GNU General Public License v3.0-or-later** (plik `LICENSE`)
 
 Pobierz instalator dla Windows 10/11x64 - (https://drive.proton.me/urls/KQ9RFM2WN8#3LSVDqWMyeDH)
 
-Pobierz instalator dla Debian/Ubuntu - (https://drive.proton.me/urls/2N21QCVZC4#kw6yetLZEInz)
+Pobierz instalator dla Debian/Ubuntu - (https://drive.proton.me/urls/SDC0ZTZHPG#6E5ZEv9Q90fW)
 
 Pobierz instalator dla Fedora - (https://drive.proton.me/urls/Q253EKZ36C#mtKPmbaRBPsn)
 
